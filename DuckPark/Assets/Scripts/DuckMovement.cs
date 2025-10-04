@@ -16,24 +16,43 @@ public class DuckMovement : MonoBehaviour
     [SerializeField] private KeyCode rightKey = KeyCode.D;
     [SerializeField] private KeyCode jumpKey = KeyCode.W;
 
+    [SerializeField] private Animator animator;
+
     // Update is called once per frame
     void Update()
     {
         horizontal = 0f;
         if (Input.GetKey(leftKey))
+        {
             horizontal = -1f;
+
+
+
+
+        }
         if (Input.GetKey(rightKey))
             horizontal = 1f;
 
         if (Input.GetKeyDown(jumpKey) && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-        } 
+        }
         if (Input.GetKeyUp(jumpKey) && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
-             
+
+        if (Mathf.Abs(horizontal) == 1)
+        {
+            animator.SetFloat("Speed", 1);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
+        }
+
+
+
 
         Flip();
     }
@@ -57,5 +76,5 @@ public class DuckMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
-    }   
+    }
 }
