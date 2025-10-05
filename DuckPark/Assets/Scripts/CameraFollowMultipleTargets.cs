@@ -59,7 +59,8 @@ public class CameraFollowMultipleTargets : MonoBehaviour
     void Zoom()
     {
         float greatestDistance = GetGreatestDistance();
-        float newZoom = Mathf.Lerp(maxZoom, minZoom, greatestDistance / zoomLimiter);
+        // Zoom out as players get further apart, zoom in as they get closer
+        float newZoom = Mathf.Lerp(minZoom, maxZoom, greatestDistance / zoomLimiter);
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, newZoom, Time.deltaTime);
     }
 

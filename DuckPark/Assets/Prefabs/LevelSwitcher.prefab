@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5513682071447427006}
   - component: {fileID: 408864412377889410}
   - component: {fileID: -1487322685732729721}
+  - component: {fileID: 1612301033888480735}
   m_Layer: 0
   m_Name: LevelSwitcher
   m_TagString: Untagged
@@ -160,3 +161,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.4, y: 1.3}
   m_EdgeRadius: 0
+--- !u!114 &1612301033888480735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7955458671834126104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bf35a3208f52d49bd37323f9b8f5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelEnd
+  nextLevelSceneName: 
