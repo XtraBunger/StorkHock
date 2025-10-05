@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class duckSlider : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class duckSlider : MonoBehaviour
 
     void Start()
     {
+
+        
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
@@ -33,6 +36,7 @@ public class duckSlider : MonoBehaviour
     public void ChangeVolumeFromSlider()
     {
         changeVolume(volumeSlider.value);
+        EventSystem.current.SetSelectedGameObject(null); // Deselect slider to prevent arrow key focus
     }
 
     private void load()

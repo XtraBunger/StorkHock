@@ -1,37 +1,35 @@
-# StormHacks 2025 – StorkHock
+# StormHacks 2025 – Ducks in a Row
 
 ## Overview
-StorkHock is a project built for StormHacks 2025. It aims to [briefly describe your project's purpose, e.g., solve a real-world problem, provide a unique service, etc.].
+Ducks in a Row is a Unity-based multiplayer game built for StormHacks 2025. Players control ducks in a fast-paced arena, competing to score points and outmaneuver opponents.
 
 ## Features
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+- Real-time multiplayer duck gameplay
 
 ## Technologies Used
-- [Tech stack, e.g., Python, React, Node.js, etc.]
+- Unity (C#)
+- Git & GitHub
+- 
 
 ## Setup Instructions
 1. Clone the repository:
    ```powershell
    git clone <your-repo-url>
    ```
-2. Install dependencies:
-   ```powershell
-   # Add your install commands here
-   ```
-3. Run the project:
-   ```powershell
-   # Add your run commands here
-   ```
+2. Open the project in Unity by adding the folder DuckPark (recommended version: 6000.2.6f2 or later).
+3. Install dependencies:
+   - Use Unity Package Manager to install required packages.
+4. Run the project:
+   - Press Play in the Unity Editor.
+   - For builds, use `File > Build Settings` in Unity.
 
 ## Team
-- [Your Name]
-- [Teammate 1]
-- [Teammate 2]
+- Kale Moskowitz
+- Emily Huang
+- Ethan Cheung
+- Aaron Yee
 
-## License
-[Specify license if applicable]
+
 
 ---
 *Created for StormHacks 2025*
