@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4913945950560571005}
   - component: {fileID: 6809018250095003362}
   - component: {fileID: 1753506407896138648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,6 +184,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
   leftKey: 97
   rightKey: 100
   jumpKey: 119
@@ -196,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6057688963357392029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}

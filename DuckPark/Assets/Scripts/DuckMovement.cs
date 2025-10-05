@@ -10,6 +10,7 @@ public class DuckMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask playerLayer;
 
     [Header("Movement Keys")]
     [SerializeField] private KeyCode leftKey = KeyCode.A;
@@ -28,12 +29,12 @@ public class DuckMovement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-        } 
+        }
         if (Input.GetKeyUp(jumpKey) && rb.linearVelocity.y > 0f)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
-             
+
 
         Flip();
     }
@@ -45,7 +46,7 @@ public class DuckMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer) || Physics2D.OverlapCircle(groundCheck.position, 0.2f, playerLayer);
     }
 
     private void Flip()
@@ -57,5 +58,5 @@ public class DuckMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
-    }   
+    }
 }
