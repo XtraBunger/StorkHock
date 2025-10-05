@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abc978598273d6488224c58c93b6f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: level0
+  sceneName: playerControls
   playerCount: 3
 --- !u!1 &176677512
 GameObject:
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abc978598273d6488224c58c93b6f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartGame
-  sceneName: level0
+  sceneName: playerControls
   playerCount: 4
 --- !u!1 &315341154
 GameObject:
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abc978598273d6488224c58c93b6f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartGame
-  sceneName: level0
+  sceneName: playerControls
   playerCount: 2
 --- !u!1 &509684515 stripped
 GameObject:
