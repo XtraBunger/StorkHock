@@ -124,7 +124,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6103922981916579116, guid: 605d4b406d670c2499bac3cbb32e9a10, type: 3}
   m_PrefabInstance: {fileID: 435529778}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &201104841
+=======
+--- !u!1001 &138732672
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -132,6 +136,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 7471922057008591172, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Road Sign 01
@@ -176,11 +181,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.4278
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.12501
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877241494222379201, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+      propertyPath: m_Name
+      value: LevelRestarter
+      objectReference: {fileID: 0}
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
 --- !u!1 &211424765
 GameObject:
   m_ObjectHideFlags: 0
@@ -38754,4 +38809,8 @@ SceneRoots:
   - {fileID: 700197287}
   - {fileID: 1128729060}
   - {fileID: 1492066035}
+<<<<<<< HEAD
   - {fileID: 201104841}
+=======
+  - {fileID: 138732672}
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
