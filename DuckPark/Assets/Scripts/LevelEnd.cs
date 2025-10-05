@@ -44,7 +44,7 @@ public class LevelEnd : MonoBehaviour
         Debug.Log("All players in zone! Starting next level...");
         if (!string.IsNullOrEmpty(nextLevelSceneName))
         {
-            SceneManager.LoadScene(nextLevelSceneName);
+            SceneManager.LoadSceneAsync(nextLevelSceneName);
         }
         else
         {
