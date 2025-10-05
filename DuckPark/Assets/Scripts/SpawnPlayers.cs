@@ -12,6 +12,8 @@ public class SpawnPlayers : MonoBehaviour
     {
         playerCount = PlayerPrefs.GetInt("PlayerCount", 1); // 1 is the default if not set
         Debug.Log("Spawning " + playerCount + " players.");
+        if (cameraFollow != null)
+            cameraFollow.targets.Clear(); // Ensure targets list is empty before adding
         for (int i = 0; i < playerCount; i++)
         {
             if (i < playerPrefabs.Length && i < spawnPoints.Length)
@@ -20,6 +22,7 @@ public class SpawnPlayers : MonoBehaviour
                 if (cameraFollow != null)
                 {
                     cameraFollow.targets.Add(player.transform);
+                    Debug.Log($"Added player {i} to camera targets: {player.transform.name}");
                 }
             }
         }

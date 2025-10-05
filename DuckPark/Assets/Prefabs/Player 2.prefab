@@ -188,9 +188,9 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  leftKey: 97
-  rightKey: 100
-  jumpKey: 119
+  leftKey: 276
+  rightKey: 275
+  jumpKey: 273
   attackKey: 115
   animator: {fileID: 4850186163803298559}
   enableDoubleTapAttack: 1
