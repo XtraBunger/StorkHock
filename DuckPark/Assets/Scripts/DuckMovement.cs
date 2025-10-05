@@ -73,11 +73,12 @@ public class DuckMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        // Check for ground directly below
-        bool groundBelow = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.25f, groundLayer);
+        // Add leeway for ground detection by slightly increasing the raycast distance
+        float leeway = 0.05f; // 5 pixels if pixels per unit is 100
+        bool groundBelow = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.25f + leeway, groundLayer);
 
         // Check for other players directly below, ignore self
-        Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, playerLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f + leeway, playerLayer);
         bool playerBelow = false;
         foreach (var hit in hits)
         {
