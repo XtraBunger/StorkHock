@@ -1,4 +1,3 @@
-// ...existing code...
 using UnityEngine;
 
 public class DuckMovement : MonoBehaviour
@@ -17,6 +16,7 @@ public class DuckMovement : MonoBehaviour
     [SerializeField] private KeyCode leftKey = KeyCode.A;
     [SerializeField] private KeyCode rightKey = KeyCode.D;
     [SerializeField] private KeyCode jumpKey = KeyCode.W;
+    [SerializeField] private KeyCode attackKey = KeyCode.S;
 
     [SerializeField] private Animator animator;
     [Header("Attack")]
@@ -36,57 +36,24 @@ public class DuckMovement : MonoBehaviour
     void Update()
     {
         horizontal = 0f;
-        if (Input.GetKey(leftKey))
-        {
+        bool leftPressed = Input.GetKey(leftKey);
+        bool rightPressed = Input.GetKey(rightKey);
+        if (leftPressed && !rightPressed)
             horizontal = -1f;
-        }
-        if (Input.GetKey(rightKey))
+        else if (rightPressed && !leftPressed)
             horizontal = 1f;
+        // If both are pressed, horizontal stays 0
 
-        // Double-tap attack detection (left/right)
-        if (enableDoubleTapAttack)
+        // Attack only on attackKey (S)
+        if (Input.GetKeyDown(attackKey))
         {
-            // Left key tapped
-            if (Input.GetKeyDown(leftKey))
-            {
-                float time = Time.time;
-                if (time - lastLeftTapTime <= doubleTapTime)
-                {
-                    // Double-tap detected: attack to the left
-                    TryAttack(Vector2.left);
-                    lastLeftTapTime = -1f; // reset
-                }
-                else
-                {
-                    lastLeftTapTime = time;
-                }
-            }
-
-            // Right key tapped
-            if (Input.GetKeyDown(rightKey))
-            {
-                float time = Time.time;
-                if (time - lastRightTapTime <= doubleTapTime)
-                {
-                    // Double-tap detected: attack to the right
-                    TryAttack(Vector2.right);
-                    lastRightTapTime = -1f; // reset
-                }
-                else
-                {
-                    lastRightTapTime = time;
-                }
-            }
+            Attack();
         }
 
         if (Input.GetKeyDown(jumpKey) && IsGrounded())
-        {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-        }
         if (Input.GetKeyUp(jumpKey) && rb.linearVelocity.y > 0f)
-        {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
-        }
 
         // Set animator speed parameter: 1 when moving horizontally or when in the air, otherwise 0
         if (animator != null)
@@ -106,7 +73,22 @@ public class DuckMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer) || Physics2D.OverlapCircle(groundCheck.position, 0.2f, playerLayer);
+        // Check for ground directly below
+        bool groundBelow = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.25f, groundLayer);
+
+        // Check for other players directly below, ignore self
+        Collider2D[] hits = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, playerLayer);
+        bool playerBelow = false;
+        foreach (var hit in hits)
+        {
+            if (hit.gameObject != this.gameObject)
+            {
+                playerBelow = true;
+                break;
+            }
+        }
+
+        return groundBelow || playerBelow;
     }
 
     private void Flip()
@@ -154,4 +136,3 @@ public class DuckMovement : MonoBehaviour
         // TODO: Add hit detection (OverlapBox, Raycast) and gameplay effects here.
     }
 }
-// ...existing code...
