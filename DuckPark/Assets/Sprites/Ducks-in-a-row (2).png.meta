@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 9a25a7414693bc0499dc429408704502
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6476542444519863721
+    second: Ducks-in-a-row (2)_0
+  - first:
+      213: 1701771892938787470
+    second: Ducks-in-a-row (2)_1
+  - first:
+      213: -5498815486540459584
+    second: Ducks-in-a-row (2)_2
+  - first:
+      213: 7354945920728724946
+    second: Ducks-in-a-row (2)_3
+  - first:
+      213: 3446636051120820630
+    second: Ducks-in-a-row (2)_4
+  - first:
+      213: 7586923626388258614
+    second: Ducks-in-a-row (2)_5
+  - first:
+      213: 7884250191166843531
+    second: Ducks-in-a-row (2)_6
+  - first:
+      213: -1412120243401968216
+    second: Ducks-in-a-row (2)_7
+  - first:
+      213: -5414303060829378863
+    second: Ducks-in-a-row (2)_8
+  - first:
+      213: 7712971481022712661
+    second: Ducks-in-a-row (2)_9
+  - first:
+      213: -241252110618829931
+    second: Ducks-in-a-row (2)_10
+  - first:
+      213: -7225223028644463930
+    second: Ducks-in-a-row (2)_11
+  - first:
+      213: -9090480022547231295
+    second: Ducks-in-a-row (2)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1567
+        width: 610
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5b8520a0d41e950800000000000000
+      internalID: 6476542444519863721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_1
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1695
+        width: 546
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a4c5f2588ed9710800000000000000
+      internalID: 1701771892938787470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 1727
+        width: 610
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1d65fe27840b3b0800000000000000
+      internalID: -5498815486540459584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_3
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 1631
+        width: 610
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d57e33c854021660800000000000000
+      internalID: 7354945920728724946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_4
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1663
+        width: 450
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6919c193a39e4df20800000000000000
+      internalID: 3446636051120820630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_5
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 1663
+        width: 226
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ff3e847da2a4960800000000000000
+      internalID: 7586923626388258614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_6
+      rect:
+        serializedVersion: 2
+        x: 4895
+        y: 1727
+        width: 706
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a2eccb6cb7a6d60800000000000000
+      internalID: 7884250191166843531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_7
+      rect:
+        serializedVersion: 2
+        x: 6431
+        y: 1599
+        width: 770
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a533efce14276ce0800000000000000
+      internalID: -1412120243401968216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_8
+      rect:
+        serializedVersion: 2
+        x: 8159
+        y: 1727
+        width: 610
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d664f86d088cd4b0800000000000000
+      internalID: -5414303060829378863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_9
+      rect:
+        serializedVersion: 2
+        x: 8863
+        y: 1791
+        width: 610
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bc31962baf90b60800000000000000
+      internalID: 7712971481022712661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_10
+      rect:
+        serializedVersion: 2
+        x: 9535
+        y: 1727
+        width: 802
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b504dcb76e6acf0800000000000000
+      internalID: -241252110618829931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_11
+      rect:
+        serializedVersion: 2
+        x: 10495
+        y: 2047
+        width: 162
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cabca2bfe9dabb90800000000000000
+      internalID: -7225223028644463930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ducks-in-a-row (2)_12
+      rect:
+        serializedVersion: 2
+        x: 10463
+        y: 1695
+        width: 162
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd894a359028d180800000000000000
+      internalID: -9090480022547231295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ducks-in-a-row (2)_0: 6476542444519863721
+      Ducks-in-a-row (2)_1: 1701771892938787470
+      Ducks-in-a-row (2)_10: -241252110618829931
+      Ducks-in-a-row (2)_11: -7225223028644463930
+      Ducks-in-a-row (2)_12: -9090480022547231295
+      Ducks-in-a-row (2)_2: -5498815486540459584
+      Ducks-in-a-row (2)_3: 7354945920728724946
+      Ducks-in-a-row (2)_4: 3446636051120820630
+      Ducks-in-a-row (2)_5: 7586923626388258614
+      Ducks-in-a-row (2)_6: 7884250191166843531
+      Ducks-in-a-row (2)_7: -1412120243401968216
+      Ducks-in-a-row (2)_8: -5414303060829378863
+      Ducks-in-a-row (2)_9: 7712971481022712661
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
