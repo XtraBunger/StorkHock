@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 291160127796938656}
   - component: {fileID: 7689027192476400118}
+  - component: {fileID: 1426429467926996294}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -329,18 +330,44 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 7762340711388846841}
   m_HandleRect: {fileID: 0}
-  m_Direction: 0
+  m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.462
+  m_Value: 0.171
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1426429467926996294}
+        m_TargetAssemblyTypeName: duckSlider, Assembly-CSharp
+        m_MethodName: ChangeVolumeFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1426429467926996294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275850711056129929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30447b3e55f72914484d845e30ba8b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::duckSlider
+  volumeSlider: {fileID: 7689027192476400118}
+  backgroundMusic: {fileID: 0}
 --- !u!1 &8486342268830269613
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8868729072188591806, guid: a3edae3b8fc93994da338e867a6f8ec9, type: 3}
+  m_Sprite: {fileID: 8868729072188591806, guid: 7ef2285e2db9e0047a46c7e0850f6fd2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

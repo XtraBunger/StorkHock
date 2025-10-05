@@ -24,13 +24,21 @@ public class duckSlider : MonoBehaviour
 
     public void changeVolume(float volume)
     {
-        backgroundMusic.volume = volume; // 👈 Update music volume
+        // Invert the slider value: 1 is mute, 0 is full volume
+        float mappedVolume = 1f - volume;
+        backgroundMusic.volume = mappedVolume;
         save();
+    }
+
+    public void ChangeVolumeFromSlider()
+    {
+        changeVolume(volumeSlider.value);
     }
 
     private void load()
     {
         volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        backgroundMusic.volume = 1f - volumeSlider.value;
     }
 
     private void save()
