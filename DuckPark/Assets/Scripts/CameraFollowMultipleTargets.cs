@@ -16,7 +16,7 @@ public class CameraFollowMultipleTargets : MonoBehaviour
     private Camera cam;
 
     public float killZoneY = -20f; // Set this in Inspector
-
+    public Transform teleportTarget; // Assign in Inspector
 
     void Start()
     {
@@ -31,13 +31,19 @@ public class CameraFollowMultipleTargets : MonoBehaviour
         Move();
         Zoom();
 
-        // Kill players who fall below killZoneY
+        // Teleport players who fall below killZoneY
         for (int i = targets.Count - 1; i >= 0; i--)
         {
             if (targets[i] != null && targets[i].position.y < killZoneY)
             {
-                Destroy(targets[i].gameObject);
-                targets.RemoveAt(i);
+                if (teleportTarget != null)
+                {
+                    targets[i].position = teleportTarget.position;
+                    // Optionally reset velocity if using Rigidbody2D
+                    Rigidbody2D rb = targets[i].GetComponent<Rigidbody2D>();
+                    if (rb != null)
+                        rb.linearVelocity = Vector2.zero;
+                }
             }
         }
     }

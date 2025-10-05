@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7616272826991006218}
   - component: {fileID: 2345520549418612310}
   - component: {fileID: 4850186163803298559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -191,9 +191,10 @@ MonoBehaviour:
   leftKey: 97
   rightKey: 100
   jumpKey: 119
+  attackKey: 115
   animator: {fileID: 4850186163803298559}
   enableDoubleTapAttack: 1
-  doubleTapTime: 0.25
+  doubleTapTime: 1
   attackTrigger: Attack
 --- !u!95 &4850186163803298559
 Animator:
@@ -226,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6206221940734906528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
