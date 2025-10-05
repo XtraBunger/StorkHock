@@ -1,3 +1,4 @@
+// ...existing code...
 using UnityEngine;
 
 public class DuckMovement : MonoBehaviour
@@ -10,6 +11,7 @@ public class DuckMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask playerLayer;
 
     [Header("Movement Keys")]
     [SerializeField] private KeyCode leftKey = KeyCode.A;
@@ -37,10 +39,6 @@ public class DuckMovement : MonoBehaviour
         if (Input.GetKey(leftKey))
         {
             horizontal = -1f;
-
-
-
-
         }
         if (Input.GetKey(rightKey))
             horizontal = 1f;
@@ -90,17 +88,13 @@ public class DuckMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
 
-        if (Mathf.Abs(horizontal) == 1 | Mathf.Abs(rb.linearVelocity.y) > 0)
+        // Set animator speed parameter: 1 when moving horizontally or when in the air, otherwise 0
+        if (animator != null)
         {
-            animator.SetFloat("Speed", 1);
+            bool movingHorizontally = Mathf.Abs(horizontal) > 0.01f;
+            bool inAir = Mathf.Abs(rb.linearVelocity.y) > 0.01f;
+            animator.SetFloat("Speed", (movingHorizontally || inAir) ? 1f : 0f);
         }
-        else
-        {
-            animator.SetFloat("Speed", 0);
-        }
-
-
-
 
         Flip();
     }
@@ -112,7 +106,7 @@ public class DuckMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer) || Physics2D.OverlapCircle(groundCheck.position, 0.2f, playerLayer);
     }
 
     private void Flip()
@@ -160,3 +154,4 @@ public class DuckMovement : MonoBehaviour
         // TODO: Add hit detection (OverlapBox, Raycast) and gameplay effects here.
     }
 }
+// ...existing code...
