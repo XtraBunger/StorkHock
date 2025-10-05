@@ -125,7 +125,11 @@ Transform:
   m_PrefabInstance: {fileID: 435529778}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &201104841
+=======
+--- !u!1001 &138732672
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
 =======
 --- !u!1001 &138732672
 >>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
@@ -136,6 +140,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 7471922057008591172, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_Name
@@ -182,6 +187,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 =======
+=======
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
     - target: {fileID: 1996641489759875972, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.4278
@@ -226,13 +233,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelRestarter
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
+=======
 >>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 805dddcb2d13a914f8cdff435ad55036, type: 3}
 >>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
@@ -38810,7 +38824,11 @@ SceneRoots:
   - {fileID: 1128729060}
   - {fileID: 1492066035}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 201104841}
+=======
+  - {fileID: 138732672}
+>>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
 =======
   - {fileID: 138732672}
 >>>>>>> b0f90c03c07ee8e29821531bb6ad11e2afcff0d0
