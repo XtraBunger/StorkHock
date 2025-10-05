@@ -28,6 +28,9 @@ public class DuckMovement : MonoBehaviour
     [Tooltip("Animator trigger name for attack animation")]
     private string attackTrigger = "Attack";
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] attackClips;
+
     // double-tap state
     private float lastLeftTapTime = -1f;
     private float lastRightTapTime = -1f;
@@ -133,6 +136,12 @@ public class DuckMovement : MonoBehaviour
         if (animator != null && !string.IsNullOrEmpty(attackTrigger))
         {
             animator.SetTrigger(attackTrigger);
+        }
+        // Play a random attack sound
+        if (audioSource != null && attackClips != null && attackClips.Length > 0)
+        {
+            int idx = Random.Range(0, attackClips.Length);
+            audioSource.PlayOneShot(attackClips[idx]);
         }
         // TODO: Add hit detection (OverlapBox, Raycast) and gameplay effects here.
     }
